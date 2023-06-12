@@ -1,20 +1,15 @@
-package com.sample.ModularFrameWorkSelenium;
-
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
+package com.guru99.tests;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+public class AppTest {
+	/**
+	 * Rigorous Test :-)
+	 */
+//    @Test
+//    public void shouldAnswerWithTrue()
+//    {
+//        assertTrue( true );
+//    }
 }
