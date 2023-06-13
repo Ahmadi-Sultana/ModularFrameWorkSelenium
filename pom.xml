@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -127,7 +125,7 @@
 
 			<artifactId>lombok</artifactId>
 
-			<version>1.18.26</version>
+			<version>1.18.28</version>
 
 			<scope>provided</scope>
 
@@ -154,6 +152,15 @@
 			<artifactId>json</artifactId>
 
 			<version>20220320</version>
+
+		</dependency>
+		<dependency>
+
+			<groupId>com.aventstack</groupId>
+
+			<artifactId>extentreports</artifactId>
+
+			<version>3.1.5</version>
 
 		</dependency>
 	</dependencies>

@@ -10,16 +10,16 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class commonDriver {
-	
+public class CommonDriver {
+
 	private WebDriver webDriver;
 	private int pageLodeTimeOut;
 	private int elementDetectionTimeout;
 	private String url = "";
 
-	public commonDriver(String browserType) throws Exception {
-		pageLodeTimeOut = 10;
-		elementDetectionTimeout = 10;
+	public CommonDriver(String browserType) throws Exception {
+		pageLodeTimeOut = 60;
+		elementDetectionTimeout = 60;
 
 		if (browserType.equalsIgnoreCase("chrome")) {
 			webDriver = WebDriverManager.chromedriver().create();
@@ -37,9 +37,13 @@ public class commonDriver {
 		webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(elementDetectionTimeout));
 		webDriver.get(url);
 	}
-	
-	public  void closeAllBrowser() {
+
+	public void closeAllBrowser() {
 		webDriver.quit();
+	}
+
+	public String getTitle(WebDriver webDriver) {
+		return webDriver.getTitle();
 	}
 
 }
